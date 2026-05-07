@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Top 3 Cidades</title>
+</head>
+<body>
+
+    <header id="topo">
+        <div class="carossel-imagens">
+            <img src="img/VaticanoCarrosel.png" alt="VaticanoCarrosel">
+            <img src="img/VienaCarrosel.png" alt="VienaCarrosel">
+            <img src="img/ToquioCarrosel.png" alt="ToquioCarrosel">
+        </div>
+        <div class="header-titulo">
+            <h1>Minhas Top 3 cidades no mundo</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#vaticano">Vaticano</a></li>
+            <li><a href="#viena">Viena</a></li>
+            <li><a href="#toquio">Tóquio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="vaticano">
+            <h2>Cidade do Vaticano</h2>
+            <p>A Cidade do Vaticano é o menor país do mundo e está localizada dentro de Roma. Sua criação oficial aconteceu em 1929, após o Tratado de Latrão, que garantiu a independência da Santa Sé. O Vaticano é considerado o centro da Igreja Católica e a residência oficial do Papa, possuindo enorme importância histórica, política e religiosa para milhões de pessoas ao redor do mundo.</p>
+            <img src="img/Vaticano.png" alt="FotoVaticano">
+            <p>A economia do Vaticano é baseada principalmente no turismo, nas doações de fiéis e na administração de museus e patrimônios históricos. Sua arquitetura é marcada pelos estilos renascentista e barroco, com construções famosas como a Basílica de São Pedro e a Capela Sistina, conhecida pelas pinturas de Michelangelo. A religião predominante é o catolicismo, sendo o Vaticano o principal centro religioso da Igreja Católica no mundo.</p>
+        </section>
+
+        <section id="viena">
+            <h2>Viena, Áustria</h2>
+            <p>Viena é a capital da Áustria e possui uma longa história ligada ao antigo Império Austro-Húngaro. Durante séculos, a cidade foi um dos maiores centros políticos e culturais da Europa, destacando-se principalmente na música, na arte e na filosofia. Viena também ficou conhecida por compositores famosos como Wolfgang Amadeus Mozart e Ludwig van Beethoven.</p>
+            <img src="img/Viena.png" alt="FotoViena">
+            <p>A economia de Viena é baseada no turismo, nos serviços, na tecnologia e nas atividades financeiras, sendo considerada uma das cidades com melhor qualidade de vida do mundo. Sua arquitetura mistura estilos gótico, barroco e moderno, com construções importantes como o Palácio de Schönbrunn e a Catedral de Santo Estêvão. A religião predominante historicamente é o cristianismo católico, embora atualmente a cidade possua grande diversidade religiosa e cultural.</p>
+        </section>
+
+        <section id="toquio">
+            <h2>Tóquio, Japão</h2>
+            <p>Tóquio é a capital do Japão e uma das maiores cidades do mundo. Antigamente chamada Edo, a cidade tornou-se capital imperial em 1868, durante a Restauração Meiji, período em que o Japão passou por intensa modernização. Desde então, Tóquio se transformou em um dos principais centros econômicos, tecnológicos e culturais do planeta.</p>
+            <img src="img/Toquio.png" alt="FotoToquio">
+            <p>A economia de Tóquio é muito desenvolvida, destacando-se nas áreas de tecnologia, indústria, comércio e serviços financeiros. Sua arquitetura combina tradição e modernidade, reunindo templos antigos, como o Templo Sensō-ji, e estruturas modernas, como a Tokyo Skytree. As principais religiões presentes na cidade são o xintoísmo e o budismo, que influenciam fortemente a cultura e os costumes japoneses.</p>
+        </section>
+    </main>
+
+    <footer id="finalpag">
+        <a href="#topo" class="botao-voltar">↑ Voltar ao Topo</a>
+        <p>Criado por Danilo Gonçalves da Silva</p>
+    </footer>
+
+    <!--Carrosel feito por IA-->
+
+<script> 
+        const carossel = document.querySelector('.carossel-imagens');
+        const imagens  = carossel.querySelectorAll('img');
+        let atual = 0;
+ 
+        setInterval(() => {
+            atual = (atual + 1) % imagens.length;
+            carossel.scrollTo({
+                left: imagens[atual].offsetLeft,
+                behavior: 'smooth'
+            });
+        }, 3000);
+    </script>
+</body>
+</html>
