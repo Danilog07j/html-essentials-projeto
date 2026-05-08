@@ -24,7 +24,7 @@ h1     { font-size: 2.2rem; }
 h2     { font-size: 1.8rem; margin-bottom: 16px; }
 p      { line-height: 1.7; margin-bottom: 16px; }
 
-/* Carrossel */
+
 .carossel-imagens {
     display: flex;
     overflow-x: auto;
@@ -42,14 +42,14 @@ p      { line-height: 1.7; margin-bottom: 16px; }
     border-radius: 0;
 }
 
-/* Título do header */
+
 .header-titulo {
     background-color: var(--amarelo);
     padding: 24px 40px;
     text-align: center;
 }
 
-/* Nav */
+
 nav {
     background-color: var(--preto);
     position: sticky;
@@ -80,7 +80,7 @@ nav a:hover {
     border-bottom-color: var(--amarelo);
 }
 
-/* Conteúdo */
+
 main {
     max-width: 860px;
     margin: 0 auto;
@@ -103,7 +103,7 @@ section img {
     margin: 24px 0;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--preto);
     color: var(--creme);
