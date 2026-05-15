@@ -56,20 +56,5 @@
         <p>Criado por Danilo Gonçalves da Silva</p>
     </footer>
 
-    <!--Carrosel feito por IA-->
-
-<script> 
-        const carossel = document.querySelector('.carossel-imagens');
-        const imagens  = carossel.querySelectorAll('img');
-        let atual = 0;
- 
-        setInterval(() => {
-            atual = (atual + 1) % imagens.length;
-            carossel.scrollTo({
-                left: imagens[atual].offsetLeft,
-                behavior: 'smooth'
-            });
-        }, 3000);
-    </script>
 </body>
 </html>
